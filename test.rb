@@ -4,7 +4,8 @@ require 'rubygems'
 # require 'ruby-debug'
 # Debugger.start
 
-CITY_DB = ENV.fetch("CITY", '/usr/local/GeoIP/share/GeoIP/GeoLiteCity.dat')
+CITY_DB = ENV.fetch("CITY", '/usr/local/geoip/GeoIPCity.dat')
+#CITY_DB = ENV.fetch("CITY", '/usr/local/GeoIP/share/GeoIP/GeoLiteCity.dat')
 ORG_DB  = ENV.fetch("ORG",  '/usr/local/GeoIP/share/GeoIP/GeoIPOrg.dat')
 
 class Test::Unit::TestCase

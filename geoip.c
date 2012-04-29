@@ -44,7 +44,7 @@ void rb_hash_sset(VALUE hash, const char *str, VALUE v) {
     https://github.com/Vagabond/erlang-iconv/blob/master/c_src/iconv_drv.c */
 static VALUE encode_to_utf8_and_return_rb_str(char *value) {
   if (!value)
-    return "";
+    return rb_str_new2("");
   
   char dst[BUFSIZ];
   size_t srclen = strlen(value);
